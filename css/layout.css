@@ -1,0 +1,217 @@
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background: rgba(12, 14, 18, 0.94);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    width: 100%;
+    padding: 0.9rem var(--gutter);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+}
+
+.brand-logo {
+    height: 36px;
+    width: 36px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding-block: 0.35rem;
+    font-size: 0.94rem;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--text);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+}
+
+.nav-toggle {
+    display: none;
+    background: var(--surface);
+    border: 1px solid var(--border-light);
+    color: var(--text);
+    padding: 0.45rem 0.75rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+.hero {
+    padding-block: clamp(3.5rem, 6.5vw, 6rem);
+    border-bottom: 1px solid var(--border);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.85fr);
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4.5rem);
+}
+
+.section {
+    padding-block: clamp(3.5rem, 6vw, 5.5rem);
+    border-bottom: 1px solid var(--border);
+}
+
+.section-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.section-desc {
+    color: var(--text-muted);
+    font-size: 0.96rem;
+    margin-top: 0.35rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.75rem;
+    align-items: stretch;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
+}
+
+.site-footer {
+    width: 100%;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+}
+
+.footer-inner {
+    width: 100%;
+    padding: 3.5rem var(--gutter) 2rem;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.footer-bottom {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+}
+
+@media (max-width: 920px) {
+    .hero-grid,
+    .projects-grid,
+    .skills-grid,
+    .contact-grid,
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.25rem var(--gutter);
+        gap: 1rem;
+    }
+
+    .nav-list.open {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Silva — Portfolio</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="brand">
+            <img src="images/logo.png" alt="Logo Lucas Silva" class="brand-logo">
+            <span>Lucas Silva</span>
+        </a>
+
+        <nav aria-label="Menu principal">
+            <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                <li><a href="projets.html" class="nav-link">Projets</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="parcours.html" class="nav-link">Parcours</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <a href="docs/CV_Lucas_Silva.pdf" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Mon CV</a>
+            <a href="#contact" class="btn btn-primary btn-sm">Me contacter</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <div class="hero-tag">
+                    <span class="status-dot"></span>
+                    <span>Recherche de stage ou d'alternance — Avril 2027</span>
+                </div>
+                <h1 class="hero-title">Lucas Silva — Développement logiciel, systèmes &amp; cybersécurité.</h1>
+                <p class="hero-text">
+                    Étudiant en 2<sup>e</sup> année de BUT Informatique à l'IUT de Montpellier. Je développe des applications en Java, PHP et C, et j'administre des environnements Linux orientés réseau et sécurité.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="projets.html" class="btn btn-primary">Voir tous mes projets</a>
+                    <a href="docs/CV_Lucas_Silva.pdf" target="_blank" rel="noopener" class="btn btn-secondary">Télécharger mon CV (PDF)</a>
+                </div>
+
+                <div class="hero-infos">
+                    <div>
+                        <span class="hero-info-label">Formation</span>
+                        <span class="hero-info-value">BUT Informatique — IUT Montpellier</span>
+                    </div>
+                    <div>
+                        <span class="hero-info-label">Mobilité</span>
+                        <span class="hero-info-value">Permis B — Véhiculé</span>
+                    </div>
+                    <div>
+                        <span class="hero-info-label">Secteur</span>
+                        <span class="hero-info-value">Montpellier &amp; Hérault (34)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="images/pdpLucas.jpg" alt="Lucas Silva">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Projets</h2>
+                    <p class="section-desc">Réalisations universitaires, administration système, cybersécurité et travaux à venir.</p>
+                </div>
+                <a href="https://github.com/lcsslv10" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Voir mon GitHub</a>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-preview">
+                        <img src="images/projets/alumni.png" alt="Plateforme Alumni IUT Montpellier">
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <div class="project-header">
+                                <h3 class="project-title">Plateforme Alumni — IUT de Montpellier</h3>
+                                <span class="badge-status badge-done">En cours (SAÉ)</span>
+                            </div>
+                            <p class="project-desc">
+                                Application web multi-rôles développée en équipe : architecture PHP MVC avec PDO, authentification LDAP, gestion des profils anciens étudiants, filtrage d'événements et publication d'offres de stages et d'alternances.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tags">
+                                <span class="tag">PHP MVC</span>
+                                <span class="tag">MySQL / PDO</span>
+                                <span class="tag">LDAP</span>
+                                <span class="tag">Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview">
+                        <img src="images/projets/dominion.png" alt="Dominion SeaSide JavaFX">
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <div class="project-header">
+                                <h3 class="project-title">Dominion SeaSide — Logique &amp; IHM</h3>
+                                <span class="badge-status badge-done">Terminé</span>
+                            </div>
+                            <p class="project-desc">
+                                Projet en binôme réalisé en deux étapes : implémentation complète de la logique métier et des mécaniques de cartes en Java POO, puis développement de l'interface graphique sous JavaFX et FXML.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tags">
+                                <span class="tag">Java POO</span>
+                                <span class="tag">JavaFX / FXML</span>
+                                <span class="tag">Git</span>
+                            </div>
+                            <a href="https://github.com/lcsslv10/Dominion-IHM" target="_blank" rel="noopener" class="project-link">Code source &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview">
+                        <img src="images/projets/homelab.jpg" alt="Home Lab Kali Linux et Metasploitable 2">
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <div class="project-header">
+                                <h3 class="project-title">Home Lab Cybersécurité (Kali &amp; Metasploitable)</h3>
+                                <span class="badge-status badge-done">Terminé</span>
+                            </div>
+                            <p class="project-desc">
+                                Environnement virtuel isolé sous VirtualBox : reconnaissance réseau, scan de vulnérabilités, exploitation contrôlée d'une faille connue depuis Kali Linux sur Metasploitable 2, puis sécurisation et correction du service.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tags">
+                                <span class="tag">Kali Linux</span>
+                                <span class="tag">VirtualBox</span>
+                                <span class="tag">Pentest</span>
+                            </div>
+                            <a href="https://github.com/lcsslv10/homelab" target="_blank" rel="noopener" class="project-link">Dépôt GitHub &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview">
+                        <img src="images/projets/lamp.jpg" alt="Serveur LAMP et messagerie Ubuntu Server">
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <div class="project-header">
+                                <h3 class="project-title">Infrastructure Web LAMP &amp; Serveur Mail</h3>
+                                <span class="badge-status badge-done">Terminé</span>
+                            </div>
+                            <p class="project-desc">
+                                Déploiement complet d'un serveur sous Ubuntu Server : configuration d'Apache2, MySQL et PHP/PDO pour l'hébergement d'une application dynamique, couplée à une chaîne de messagerie interne (Postfix, Dovecot) validée sur Thunderbird.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tags">
+                                <span class="tag">Ubuntu Server</span>
+                                <span class="tag">Apache2 / MySQL</span>
+                                <span class="tag">Postfix / Dovecot</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview">
+                        <img src="images/projets/llm.jpg" alt="Déploiement LLM local sous Linux">
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <div class="project-header">
+                                <h3 class="project-title">Déploiement d'un LLM en local sous Linux</h3>
+                                <span class="badge-status badge-soon">À venir</span>
+                            </div>
+                            <p class="project-desc">
+                                Installation et exécution d'un modèle de langage open-source en local (via Ollama) sous Kubuntu, sans dépendance cloud, avec exposition d'une API REST locale et interface web dédiée.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tags">
+                                <span class="tag">Linux</span>
+                                <span class="tag">Ollama / LLM</span>
+                                <span class="tag">API REST</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview">
+                        <img src="images/projets/scanner.jpg" alt="Scan-Detect — Scanner TCP multi-threadé en Java">
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <div class="project-header">
+                                <h3 class="project-title">Scan-Detect — Scanner TCP &amp; Découverte `/24`</h3>
+                                <span class="badge-status badge-done">Terminé</span>
+                            </div>
+                            <p class="project-desc">
+                                Outil réseau en Java (mode console et interface graphique Swing personnalisée) avec <code>PortScanner.java</code> et <code>ScannerGUI.java</code> : découverte d'hôtes sur sous-réseau <code>/24</code>, scan de ports TCP parallélisé via <code>ExecutorService</code>, arrêt propre avec variables <code>Atomic</code>, détection de services, lecture de bannière et gestion du timeout.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">ExecutorService</span>
+                                <span class="tag">Swing</span>
+                                <span class="tag">Sockets TCP</span>
+                            </div>
+                            <a href="https://github.com/lcsslv10/Scan-Detect" target="_blank" rel="noopener" class="project-link">Code source &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview">
+                        <img src="images/projets/logs.jpg" alt="Analyseur de logs SSH et détection brute-force">
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <div class="project-header">
+                                <h3 class="project-title">Analyseur de logs SSH &amp; détection brute-force</h3>
+                                <span class="badge-status badge-soon">À venir</span>
+                            </div>
+                            <p class="project-desc">
+                                Outil d'analyse des journaux d'authentification Linux (<code>/var/log/auth.log</code>) permettant d'identifier les tentatives d'intrusion répétées, d'extraire les IP suspectes et d'automatiser le blocage via pare-feu.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tags">
+                                <span class="tag">Linux / Bash</span>
+                                <span class="tag">Python / C</span>
+                                <span class="tag">Défense active</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview">
+                        <img src="images/projets/honeypot.jpg" alt="Honeypot SSH et TCP isolé">
+                    </div>
+                    <div class="project-body">
+                        <div>
+                            <div class="project-header">
+                                <h3 class="project-title">Honeypot SSH/TCP en environnement isolé</h3>
+                                <span class="badge-status badge-soon">À venir</span>
+                            </div>
+                            <p class="project-desc">
+                                Conception d'un service leurre simulant un serveur SSH/TCP dans une VM isolée afin de journaliser les connexions entrantes, les identifiants testés et les commandes exécutées par des scanners automatisés.
+                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tags">
+                                <span class="tag">Sockets TCP</span>
+                                <span class="tag">VirtualBox</span>
+                                <span class="tag">Cybersécurité</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Compétences techniques</h2>
+                    <p class="section-desc">Technologies pratiquées en cours et sur mes environnements personnels.</p>
+                </div>
+                <a href="competences.html" class="btn btn-secondary btn-sm">Détail des compétences</a>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div>
+                        <h3 class="project-title" style="margin-bottom: 0.6rem;">Développement Applicatif</h3>
+                        <p class="project-desc">Conception orientée objet, architecture MVC, tests unitaires et interfaces lourdes ou web.</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Java / JavaFX</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">C</span>
+                        <span class="tag">JUnit / Mockito</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div>
+                        <h3 class="project-title" style="margin-bottom: 0.6rem;">Systèmes &amp; Réseaux</h3>
+                        <p class="project-desc">Administration quotidienne sous Kubuntu, programmation système POSIX et déploiement de services réseau.</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Linux</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">Sockets / Threads</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div>
+                        <h3 class="project-title" style="margin-bottom: 0.6rem;">Bases de données &amp; Sécurité</h3>
+                        <p class="project-desc">Modélisation relationnelle, requêtes SQL/PL-SQL, annuaires LDAP et pratique offensive sur TryHackMe.</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">SQL / Oracle PL/SQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">LDAP</span>
+                        <span class="tag">TryHackMe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-desc">Disponible dès avril 2027 pour un stage ou une alternance.</p>
+                </div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-box">
+                    <h3 class="project-title" style="margin-bottom: 0.6rem;">Mes coordonnées</h3>
+                    <p class="project-desc">
+                        Vous pouvez me joindre directement par e-mail ou via le formulaire ci-contre pour toute proposition de stage ou d'alternance.
+                    </p>
+
+                    <div class="contact-items">
+                        <div class="contact-row">
+                            <div>
+                                <span class="contact-row-label">E-mail</span>
+                                <span class="contact-row-value" id="email-text">lucas.silva@etu.umontpellier.fr</span>
+                            </div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="copy-email-btn">Copier</button>
+                        </div>
+
+                        <div class="contact-row">
+                            <div>
+                                <span class="contact-row-label">Localisation &amp; Mobilité</span>
+                                <span class="contact-row-value">Montpellier / Saint-Pargoire — Permis B, véhiculé</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <div>
+                                <span class="contact-row-label">Curriculum Vitae</span>
+                                <span class="contact-row-value">CV_Lucas_Silva.pdf</span>
+                            </div>
+                            <a href="docs/CV_Lucas_Silva.pdf" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Ouvrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-box" action="mailto:lucas.silva@etu.umontpellier.fr" method="post" enctype="text/plain">
+                    <h3 class="project-title" style="margin-bottom: 1.2rem;">Envoyer un message</h3>
+
+                    <div class="form-field">
+                        <label for="name" class="form-label">Nom / Entreprise</label>
+                        <input type="text" id="name" name="Nom" class="form-input" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email" class="form-label">Votre e-mail</label>
+                        <input type="email" id="email" name="Email" class="form-input" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="subject" class="form-label">Objet</label>
+                        <input type="text" id="subject" name="Objet" class="form-input" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="Message" class="form-textarea" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-top">
+            <div>
+                <a href="index.html" class="brand" style="margin-bottom: 0.9rem;">
+                    <img src="images/logo.png" alt="Logo Lucas Silva" class="brand-logo">
+                    <span>Lucas Silva</span>
+                </a>
+                <p class="project-desc" style="max-width: 42ch;">
+                    Étudiant en BUT Informatique à l'IUT de Montpellier. Recherche de stage ou d'alternance à partir d'avril 2027.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="parcours.html">Parcours</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Liens</h4>
+                <ul class="footer-list">
+                    <li><a href="docs/CV_Lucas_Silva.pdf" target="_blank" rel="noopener">CV PDF</a></li>
+                    <li><a href="https://github.com/lcsslv10" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/lucas-silva-329757350/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://tryhackme.com/p/lucasslv" target="_blank" rel="noopener">TryHackMe</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; 2026 Lucas Silva — Tous droits réservés.</span>
+            <span>Site personnel statique · Aucun cookie ni donnée collectée · Hébergé via GitHub Pages</span>
+        </div>
+    </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/copy-email.js"></script>
+</body>
+</html>

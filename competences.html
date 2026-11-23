@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences — Lucas Silva</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="brand">
+            <img src="images/logo.png" alt="LS" class="brand-logo">
+            <span>Lucas Silva</span>
+        </a>
+
+        <nav aria-label="Menu principal">
+            <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="projets.html" class="nav-link">Projets</a></li>
+                <li><a href="competences.html" class="nav-link active">Compétences</a></li>
+                <li><a href="parcours.html" class="nav-link">Parcours</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <a href="docs/CV_Lucas_Silva.pdf" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Mon CV</a>
+            <a href="index.html#contact" class="btn btn-primary btn-sm">Me contacter</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <span class="page-eyebrow">Compétences</span>
+            <h1 class="page-title">Socle technique</h1>
+            <p class="page-lead">
+                Langages, outils et environnements maîtrisés au fil du BUT Informatique à l'IUT de Montpellier et de mes projets personnels.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div>
+                        <h2 class="project-title" style="margin-bottom: 0.6rem;">Développement logiciel &amp; Web</h2>
+                        <p class="project-desc">
+                            Conception orientée objet, architectures MVC, séparation des responsabilités et tests automatisés.
+                        </p>
+                        <ul class="skill-list">
+                            <li><strong>Java &amp; JavaFX</strong><span>POO, FXML, observables</span></li>
+                            <li><strong>PHP</strong><span>Architecture MVC, PDO</span></li>
+                            <li><strong>Web Front</strong><span>HTML5, CSS3, Tailwind CSS</span></li>
+                            <li><strong>Qualité</strong><span>JUnit, Mockito, principes SOLID</span></li>
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">JavaFX</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">JUnit</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div>
+                        <h2 class="project-title" style="margin-bottom: 0.6rem;">Systèmes, Réseaux &amp; Bas Niveau</h2>
+                        <p class="project-desc">
+                            Utilisation quotidienne de Linux, programmation système POSIX et déploiement de services réseau.
+                        </p>
+                        <ul class="skill-list">
+                            <li><strong>Langage C</strong><span>Processus, pipes, threads, sockets</span></li>
+                            <li><strong>Administration Linux</strong><span>Kubuntu, Ubuntu Server, Bash</span></li>
+                            <li><strong>Services réseau</strong><span>Apache2, Postfix, Dovecot</span></li>
+                            <li><strong>Virtualisation</strong><span>VirtualBox, réseaux isolés</span></li>
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Sockets TCP/IP</span>
+                        <span class="tag">Bash</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div>
+                        <h2 class="project-title" style="margin-bottom: 0.6rem;">Bases de données &amp; Cybersécurité</h2>
+                        <p class="project-desc">
+                            Modélisation relationnelle, gestion des accès et pratique offensive/défensive en environnement contrôlé.
+                        </p>
+                        <ul class="skill-list">
+                            <li><strong>Bases de données</strong><span>SQL, Oracle PL/SQL, MySQL</span></li>
+                            <li><strong>Annuaires &amp; Auth</strong><span>LDAP, gestion des sessions</span></li>
+                            <li><strong>Audit &amp; Pentest</strong><span>Nmap, Metasploit, Kali Linux</span></li>
+                            <li><strong>Entraînement</strong><span>Parcours TryHackMe</span></li>
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">SQL / PL/SQL</span>
+                        <span class="tag">LDAP</span>
+                        <span class="tag">Kali Linux</span>
+                        <span class="tag">TryHackMe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Environnement de travail &amp; Outils</h2>
+                    <p class="section-desc">Outils utilisés au quotidien pour développer, versionner et tester mes projets.</p>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div>
+                        <h3 class="project-title" style="margin-bottom: 0.5rem;">IDE &amp; Éditeurs</h3>
+                        <p class="project-desc">IntelliJ IDEA Ultimate pour Java/JavaFX, PhpStorm pour le développement web MVC, terminal Linux pour le C.</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">IntelliJ IDEA</span>
+                        <span class="tag">PhpStorm</span>
+                        <span class="tag">GCC / Makefile</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div>
+                        <h3 class="project-title" style="margin-bottom: 0.5rem;">Gestion de version</h3>
+                        <p class="project-desc">Travail collaboratif en équipe sur GitLab et GitHub : gestion de branches, fusions et résolution de conflits.</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">GitLab</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div>
+                        <h3 class="project-title" style="margin-bottom: 0.5rem;">Méthodes &amp; Savoir-être</h3>
+                        <p class="project-desc">Rigueur acquise en travail d'équipe universitaire et en saisonnier, autonomie et capacité d'adaptation rapide.</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Travail en binôme / équipe</span>
+                        <span class="tag">Agilité</span>
+                        <span class="tag">Permis B</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-top">
+            <div>
+                <a href="index.html" class="brand" style="margin-bottom: 0.9rem;">
+                    <img src="images/logo.png" alt="LS" class="brand-logo">
+                    <span>Lucas Silva</span>
+                </a>
+                <p class="project-desc" style="max-width: 42ch;">
+                    Étudiant en BUT Informatique à l'IUT de Montpellier. Recherche de stage ou d'alternance à partir d'avril 2027.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="parcours.html">Parcours</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Liens</h4>
+                <ul class="footer-list">
+                    <li><a href="docs/CV_Lucas_Silva.pdf" target="_blank" rel="noopener">CV PDF</a></li>
+                    <li><a href="https://github.com/lcsslv10" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/lucas-silva-329757350/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://tryhackme.com/p/lucasslv" target="_blank" rel="noopener">TryHackMe</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; 2026 Lucas Silva — Tous droits réservés.</span>
+            <span>Site personnel statique · Aucun cookie ni donnée collectée · Hébergé via GitHub Pages</span>
+        </div>
+    </div>
+</footer>
+
+<script src="js/nav.js"></script>
+</body>
+</html>
