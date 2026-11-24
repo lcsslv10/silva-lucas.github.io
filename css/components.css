@@ -225,14 +225,6 @@
     padding-top: 0.5rem;
 }
 
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
-    flex: 1 1 auto;
-    min-width: 0;
-}
-
 .project-link {
     font-size: 0.85rem;
     font-weight: 500;
@@ -257,10 +249,22 @@
     height: 100%;
 }
 
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 0.45rem;
+}
+
 .tag {
+    display: inline-flex;
+    align-items: center;
+    height: fit-content;
+    line-height: 1.2;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     font-size: 0.77rem;
-    padding: 0.26rem 0.6rem;
+    padding: 0.28rem 0.6rem;
     border-radius: 5px;
     background: var(--bg);
     border: 1px solid var(--border);
@@ -494,4 +498,24 @@
 
 .project-card:hover .project-preview img {
     transform: scale(1.03);
+}
+
+.page-header-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.thm-header-badge {
+    flex-shrink: 0;
+}
+
+.thm-header-badge iframe {
+    display: block;
+    width: 329px;
+    height: 88px;
+    border: none;
+    border-radius: 8px;
 }
