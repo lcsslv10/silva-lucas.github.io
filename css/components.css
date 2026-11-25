@@ -519,3 +519,18 @@
     border: none;
     border-radius: 8px;
 }
+
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 0.75rem;
+}
+
+.lang-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
